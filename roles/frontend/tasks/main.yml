@@ -1,11 +1,4 @@
 
-
-#systemctl enable nginx
-#systemctl start nginx
-
-#systemctl restart nginx
-
-
 - name: disable ngnix default version
   ansible.builtin.shell: dnf module disable nginx -y
 
