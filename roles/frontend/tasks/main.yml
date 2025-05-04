@@ -17,11 +17,10 @@
     name: nginx
     state: installed
 
-- name: Copy nginx conf file
-  ansible.builtin.copy:
+- name: Copy Nginx config file
+  ansible.builtin.template:
     src: nginx.conf
     dest: /etc/nginx/nginx.conf
-    remote_src: yes
 
 - name: remove nginx directory
   ansible.builtin.file:
