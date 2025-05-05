@@ -9,4 +9,17 @@
     name: nodejs
     state: installed
 
+- name: import app prerequisites
+  ansible.builtin.include_tasks:
+    file: app-prereq.yml
+
+- name: Install NodeJS dependencies
+  community.general.npm:
+  path: /app
+
+- name: SystemD Service Setup
+  ansible.builtin.include_tasks:
+    file: systemd.yml
+
+
 
