@@ -1,7 +1,7 @@
 #source ./common.sh
 #app_name=catalogue
 
-#NODEJS
+#nodejs.yml
 #
 #echo Copy MongoDB repo file
 #cp $dir_path/mongo.repo /etc/yum.repos.d/mongo.repo &>>$log_file
